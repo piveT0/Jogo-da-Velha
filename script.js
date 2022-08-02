@@ -1,10 +1,10 @@
 const descendentes = document.querySelectorAll("span");
 const vez = document.querySelector('h3')
 const status = document.querySelector('h2')
-alert(UserAgent());
+
 var bloqueado = false;
 var p = "X"
-
+alert(UserAgent())
 for (var I = 0; I < descendentes.length; I++) {
     descendentes[I].addEventListener("click", function (e) {
         if (bloqueado) return false;
@@ -42,8 +42,8 @@ function blockClick(block, jogadas, id) {
 
 }
 
-function UserAgent(){
-return navigator.userAgent
+function UserAgent() {
+    return navigator.userAgent
 }
 
 function checaVencedor() {
